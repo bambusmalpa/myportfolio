@@ -6,6 +6,7 @@ const SkilsWrapper=styled.ul`
     color:#F8F8F2;
     list-style:none;
     flex-direction:column;
+    
 
 `
 
