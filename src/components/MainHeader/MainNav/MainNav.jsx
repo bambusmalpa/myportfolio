@@ -17,8 +17,9 @@ const MainNavList=styled.nav`
      width:100vw;
      height:10vh;
      transition:1s;
-     background-color:#282A36;
-     
+     transition-delay:0.5s;
+     /* background-color:#282A36; */
+     background-color:#44475A;
     }
     .navList.off{
       transform:translateX(-100%)
@@ -43,6 +44,7 @@ const MainNavList=styled.nav`
      color:#6272A4;
      font-size:1.2rem;
      transition:0.5s;
+     
     }
     .navList__li>.navList__link.active{
       font-size:1.2rem;
@@ -54,7 +56,7 @@ const MainNavList=styled.nav`
     @media(min-width:767px){
       .navList{
         flex-direction:column;
-        width:10vw;
+        width:5vw;
         height:80vh;
         border-right:1px solid #000000;
       }
@@ -69,17 +71,7 @@ const MainNavList=styled.nav`
       justify-content:center;
       align-items:center;
     
-    }
-    .navList__li>.navList__link{
-
-
-
-    }
-
-    
-    }
-  
-  `
+      }`
 
 
 

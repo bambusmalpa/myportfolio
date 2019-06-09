@@ -11,14 +11,22 @@ const ContentContainer=styled.main`
     flex: 1;
     background-color:#44475A;
     overflow:hidden;
+    transition:0.5s;
+    &.small{
+        padding-top:10vh;
+    }
+    &.big{
+        padding-top:0vh;
+        transition-delay:1.2s;
+    }
     @media(min-width:767px){
-       margin-left:10vw;
+       margin-left:5vw;
      }
 
 `
 
-const Content = () => {
-    return (  <ContentContainer>
+const Content = (props) => {
+    return (  <ContentContainer className={props.menuOn?"small":"big"}>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/skills" component={Skills} />

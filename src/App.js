@@ -16,13 +16,21 @@ const AppView=styled.div`
 `
 
 class App extends React.Component {
+  state={
+    menuOn:false,
+  }
+toggleMenuOn=()=>{
+    this.setState({
+      menuOn:!this.state.menuOn
+    })
+  }
 
 render(){
   return (
     <AppView>
       <Router>
-        <MainHeader/>
-        <Content/>
+        <MainHeader menuOn={this.state.menuOn} toggleMenuOn={this.toggleMenuOn}/>
+        <Content  menuOn={this.state.menuOn}/>
       </Router>
       <MainFooter/>
     </AppView>
