@@ -10,7 +10,7 @@ const MainNavList=styled.nav`
     display:block;
     top:100%;
     left:0;
-    
+    z-index:10;
     .navList{
      display:flex;
      justify-content:flex-start;
@@ -18,8 +18,8 @@ const MainNavList=styled.nav`
      height:10vh;
      transition:1s;
      transition-delay:0.5s;
-     /* background-color:#282A36; */
-     background-color:#44475A;
+     background-color:#282A36;
+    
     }
     .navList.off{
       transform:translateX(-100%)
@@ -55,9 +55,10 @@ const MainNavList=styled.nav`
 
     @media(min-width:767px){
       .navList{
+        
         flex-direction:column;
         width:5vw;
-        height:80vh;
+        height:95vh;
         border-right:1px solid #000000;
       }
       .navList.off{

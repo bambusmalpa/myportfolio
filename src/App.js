@@ -7,13 +7,22 @@ import MainFooter from "./components/Footer/MainFooter"
 
 const AppView=styled.div`
 
-  font-family: 'Open Sans', sans-serif;
+font-family: 'Inconsolata', monospace;
   font-size:15px;
   width:100%;
   height:100vh;
   display:flex;
   flex-direction:column;
-`
+  
+  >.main__view{
+    display:flex;
+    flex-direction:column;
+    @media(min-width:767px){
+      flex-direction:row;
+    
+    }
+  }
+      `
 
 class App extends React.Component {
   state={
@@ -28,7 +37,7 @@ toggleMenuOn=()=>{
 render(){
   return (
     <AppView>
-      <Router>
+      <Router className="main__view">
         <MainHeader menuOn={this.state.menuOn} toggleMenuOn={this.toggleMenuOn}/>
         <Content  menuOn={this.state.menuOn}/>
       </Router>

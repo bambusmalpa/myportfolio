@@ -10,7 +10,6 @@ import styled from "styled-components"
 const ContentContainer=styled.main`
     flex: 1;
     background-color:#44475A;
-    overflow:hidden;
     transition:0.5s;
     &.small{
         padding-top:10vh;
@@ -20,7 +19,12 @@ const ContentContainer=styled.main`
         transition-delay:1.2s;
     }
     @media(min-width:767px){
+        flex-direction:row;
+        height:100vh;
        margin-left:5vw;
+       &.small{
+        padding-top:0vh;
+        
      }
 
 `

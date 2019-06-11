@@ -7,7 +7,7 @@ const Logo = () => {
      width="100%" height="100%"
      viewBox="0 0 1400 470">
     <path id="right"
-        fill="#BD93F9" stroke="black" strokeWidth="1"
+        fill="#8BE9FD" stroke="black" strokeWidth="1"
         d="M 1139.50,320.00
            C 1139.50,320.00 1139.00,381.00 1139.00,381.00
              1139.00,381.00 1392.67,269.67 1392.67,269.67
@@ -17,7 +17,7 @@ const Logo = () => {
              1139.00,166.75 1314.62,248.44 1314.62,248.44
              1314.62,248.44 1139.50,320.00 1139.50,320.00 Z" />
     <path id="slash"
-        fill="#BD93F9" stroke="black" strokeWidth="1"
+        fill="#8BE9FD" stroke="black" strokeWidth="1"
         d="M 947.25,425.50
            C 947.25,425.50 1087.00,50.12 1087.00,50.12
              1087.00,50.12 1157.00,49.91 1157.00,49.91
@@ -26,7 +26,7 @@ const Logo = () => {
 
 
     <path id="k"
-        fill="#ff0000" stroke="black" strokeWidth="1"
+        fill="#8BE9FD" stroke="black" strokeWidth="1"
         d="M 663.50,425.50
            C 663.50,425.50 664.00,26.00 664.00,26.00
              664.00,26.00 741.00,26.50 741.00,26.50
@@ -42,7 +42,7 @@ const Logo = () => {
              740.50,426.00 663.50,425.50 663.50,425.50 Z" />
 
     <path id="M"
-        fill="#BD93F9" stroke="black" strokeWidth="1"
+        fill="#8BE9FD" stroke="black" strokeWidth="1"
         d="M 263.00,425.96
            C 263.00,425.96 263.00,50.04 263.00,50.04
              263.00,50.04 369.88,50.12 369.88,50.12
@@ -59,7 +59,7 @@ const Logo = () => {
              333.00,425.67 263.00,425.96 263.00,425.96 Z" />
 
     <path id="left"
-        fill="#BD93F9" stroke="black" strokeWidth="1"
+        fill="#8BE9FD" stroke="black" strokeWidth="1"
         d="M 256.67,380.00
            C 256.67,380.00 3.00,268.33 3.00,268.33
              3.00,268.33 2.67,231.67 2.67,231.67
