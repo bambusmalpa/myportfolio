@@ -5,6 +5,11 @@ import image02 from "./images/image02.webp"
 import image03 from "./images/image03.webp"
 import SingleWork from './SingleWork';
 
+const WorksTitle=styled.h1`
+    text-align:center;
+    color:#F8F8F2;
+`
+
 
 const WorksWrapper=styled.section`
     width:100%;
@@ -31,13 +36,14 @@ const works=projects.map((el,index)=>{
 })
 
 const MyWorks = () => {
-    return (<WorksWrapper>
+    return (<>
+        <WorksTitle className="works__title">MOJE PROJEKTY</WorksTitle>
+    <WorksWrapper>
        
        
 {works}
-
-
-    </WorksWrapper>);
+</WorksWrapper>
+</>);
 }
  
 export default MyWorks;

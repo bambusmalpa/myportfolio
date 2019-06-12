@@ -37,7 +37,7 @@ background-color:rgba(255,255,255,0.9);
     display:flex;
     width:100%;
     justify-content:space-around;
-    font-size:35px;
+    font-size:40px;
 }
 >.links{
     margin-left:auto;
@@ -75,8 +75,8 @@ class SingleWork extends React.Component {
             })}
             </div>
             <div className="work__content links">
-            <a href={this.props.data.link} rel="noopener noreferrer" target="_blank"><i className="fas fa-code"></i>GitHub</a>
-            <a href={this.props.data.github} rel="noopener noreferrer" target="_blank"><i className="fab fa-github"></i>Live</a>
+            <a href={this.props.data.link} rel="noopener noreferrer" target="_blank"><i className="fas fa-code"></i>Live</a>
+            <a href={this.props.data.github} rel="noopener noreferrer" target="_blank"><i className="fab fa-github"></i>GitHub</a>
             </div>
             </ElementWrapper>
             </ElementWindow></>
