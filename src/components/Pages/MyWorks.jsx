@@ -13,6 +13,11 @@ const WorksWrapper=styled.section`
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
+    @media(min-width:767px){
+        flex-direction:row;
+        justify-content:space-around;
+        height:85vh;
+    }
 
 `
 
