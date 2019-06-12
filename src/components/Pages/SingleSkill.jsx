@@ -6,7 +6,7 @@ display:flex;
 flex-direction:column;
 @media(min-width:767px){
        width:200px;
-    }
+     
 `
 
 const SkillTag =styled.li`

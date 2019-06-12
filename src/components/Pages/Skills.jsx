@@ -59,7 +59,12 @@ const SkilsWrapper=styled.section`
         flex-direction:row;
         height:85vh;
         width:80vw;
-
+        animation:getIn 1s;
+        @keyframes getIn {
+           from{opacity:0}
+           to{opacity:1}
+       }
+    }
        
     }
      

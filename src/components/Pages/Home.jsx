@@ -1,10 +1,102 @@
 import React from 'react';
 import styled from "styled-components"
 const HomeWrapper= styled.section`
+height:85%;
+>.home__title{
+   padding-top:10vh;
+   text-align:center;
+   color:#F8F8F2;
+        &::before{
+      
+        color:#BD93F9;
+        content:"<h1>";
+        font-size:12px;
+        opacity:0.5;
+        animation:fadeIn 0.5s;
+        font-weight:400;
+    }
+
+    &::after{
+        
+        content:"</h1>";
+        color:#BD93F9;
+        font-size:12px;
+        opacity:0.5;
+        font-weight:400;
+        animation:fadeIn 0.5s;
+    }
    
+   
+}
+
+>.logo__container{
+  margin-left:auto;
+  margin-right:auto;
+   width:90%;
+   transform:translateY(25%);
    >.home__logo{
-      width:90%;
-   }
+
+   >.logo__path{
+      stroke:#F8F8F2;
+
+      stroke-dashoffset:0;
+      stroke-width:3;
+      fill:transparent;
+     }
+     >#left{
+      stroke-dasharray:1102;
+      animation-name:loadLogoLeft,fillLogo;
+      animation-delay:0s, 1s;
+      animation-duration:1s;
+      animation-fill-mode: forwards,forwards;
+     }
+     >#M{
+      stroke-dasharray:3000;
+      animation-name:loadLogoM,fillLogo;
+      animation-delay:0s, 1s;
+      animation-duration:1s;
+      animation-fill-mode: forwards,forwards;
+     }
+    
+     >#slash{
+      stroke-dasharray:942
+      animation-name:loadLogoSlash,fillLogo;
+      animation-delay:0s, 1s;
+      animation-duration:1s;
+      animation-fill-mode: forwards,forwards;
+     }
+     >#right{
+      stroke-dasharray:1102
+      animation-name:loadLogoRight,fillLogo;
+      animation-delay:0s, 1s;
+      animation-duration:1s;
+      animation-fill-mode: forwards,forwards;
+     }
+     @keyframes loadLogoLeft {
+      from{stroke-dashoffset:1102}
+          to{stroke-dashoffset:0}}
+          @keyframes loadLogoM {
+      from{stroke-dashoffset:3000}
+          to{stroke-dashoffset:0}}
+     
+          @keyframes loadLogoSlash {
+      from{stroke-dashoffset:942}
+          to{stroke-dashoffset:0}}
+          @keyframes loadLogoRight {
+      from{stroke-dashoffset:1102}
+          to{stroke-dashoffset:0}}
+            @keyframes fillLogo{
+               from{fill:transparent}
+               to{fill:#F8F8F2}
+            }
+  }
+  @media(min-width:767px){
+     width:60%;
+  }
+}  
+
+
+
 
 
 
@@ -12,85 +104,65 @@ const HomeWrapper= styled.section`
 const Home = () => {
     return (
         <HomeWrapper>
-        <h1 className="home__title">WITAJ MA MOJEJ STRONIE</h1>
-        
+        <h1 className="home__title">WITAJ MA MOJEJ STRONIE!</h1>
+        <div className="logo__container">
         <svg className="home__logo"xmlns="http://www.w3.org/2000/svg"
      width="100%" height="100%"
-     viewBox="0 0 1400 470">
+     viewBox="0 0 1150 500">
 
+   <path className="logo__path" id="left"
+        fill="none" stroke="black" strokeWidth="1"
+        d="M 271.67,446.00
+           C 271.67,446.00 18.00,334.33 18.00,334.33
+             18.00,334.33 17.67,297.67 17.67,297.67
+             17.67,297.67 271.82,171.00 271.82,171.00
+             271.82,171.00 271.88,231.88 271.88,231.88
+             271.88,231.88 96.64,313.64 96.64,313.64
+             96.64,313.64 272.00,385.91 272.00,385.91
+             272.00,385.91 271.67,446.00 271.67,446.00 Z
+           M 342.94,498.94" />
 
+   <path className="logo__path" id="M"
+        fill="none" stroke="black" strokeWidth="1"
+        d="M 278.00,491.96
+           C 278.00,491.96 278.00,116.04 278.00,116.04
+             278.00,116.04 384.88,116.12 384.88,116.12
+             384.88,116.12 475.45,403.91 475.45,403.91
+             475.45,403.91 571.33,116.33 571.33,116.33
+             571.33,116.33 677.67,116.33 677.67,116.33
+             677.67,116.33 677.67,491.67 677.67,491.67
+             677.67,491.67 604.67,491.67 604.67,491.67
+             604.67,491.67 607.67,195.67 607.67,195.67
+             607.67,195.67 509.00,491.67 509.00,491.67
+             509.00,491.67 436.33,491.67 436.33,491.67
+             436.33,491.67 344.67,195.33 344.67,195.33
+             344.67,195.33 348.00,491.67 348.00,491.67
+             348.00,491.67 278.00,491.96 278.00,491.96 Z"/>
 
+   <path className="logo__path" id="slash"
+        fill="none" stroke="black" strokeWidth="1"
+        d="M 684.25,491.50
+           C 684.25,491.50 824.00,116.12 824.00,116.12
+             824.00,116.12 894.00,115.91 894.00,115.91
+             894.00,115.91 754.33,491.33 754.33,491.33
+             754.33,491.33 684.25,491.50 684.25,491.50 Z"/>
 
-    <path className="logo__path"id="left"
-         strokeWidth="1"
-        d="M 256.67,380.00
-           C 256.67,380.00 3.00,268.33 3.00,268.33
-             3.00,268.33 2.67,231.67 2.67,231.67
-             2.67,231.67 256.82,105.00 256.82,105.00
-             256.82,105.00 256.88,165.88 256.88,165.88
-             256.88,165.88 81.64,247.64 81.64,247.64
-             81.64,247.64 257.00,319.91 257.00,319.91
-             257.00,319.91 256.67,380.00 256.67,380.00 Z
-           M 327.94,432.94" />
-    <path id="M" className="logo__path"
-         strokeWidth="1"
-        d="M 263.00,425.96
-           C 263.00,425.96 263.00,50.04 263.00,50.04
-             263.00,50.04 369.88,50.12 369.88,50.12
-             369.88,50.12 460.45,337.91 460.45,337.91
-             460.45,337.91 556.33,50.33 556.33,50.33
-             556.33,50.33 662.67,50.33 662.67,50.33
-             662.67,50.33 662.67,425.67 662.67,425.67
-             662.67,425.67 589.67,425.67 589.67,425.67
-             589.67,425.67 592.67,129.67 592.67,129.67
-             592.67,129.67 494.00,425.67 494.00,425.67
-             494.00,425.67 421.33,425.67 421.33,425.67
-             421.33,425.67 329.67,129.33 329.67,129.33
-             329.67,129.33 333.00,425.67 333.00,425.67
-             333.00,425.67 263.00,425.96 263.00,425.96 Z" />
-    <path id="k" className="logo__path"
-       strokeWidth="1"
-        d="M 663.50,425.50
-           C 663.50,425.50 664.00,26.00 664.00,26.00
-             664.00,26.00 741.00,26.50 741.00,26.50
-             741.00,26.50 737.00,270.00 737.00,270.00
-             737.00,270.00 853.00,139.50 853.00,139.50
-             853.00,139.50 940.00,139.00 940.00,139.00
-             940.00,139.00 826.50,263.50 826.50,263.50
-             826.50,263.50 946.50,425.50 946.50,425.50
-             946.50,425.50 857.50,425.50 857.50,425.50
-             857.50,425.50 775.50,309.50 775.50,309.50
-             775.50,309.50 741.50,335.00 741.50,335.00
-             741.50,335.00 740.50,426.00 740.50,426.00
-             740.50,426.00 663.50,425.50 663.50,425.50 Z" />
-    <path id="slash" className="logo__path"
-          strokeWidth="1"
-        d="M 947.25,425.50
-           C 947.25,425.50 1087.00,50.12 1087.00,50.12
-             1087.00,50.12 1157.00,49.91 1157.00,49.91
-             1157.00,49.91 1017.33,425.33 1017.33,425.33
-             1017.33,425.33 947.25,425.50 947.25,425.50 Z" />
-    <path id="right" className="logo__path"
-         strokeWidth="1"
-        d="M 1139.50,320.00
-           C 1139.50,320.00 1139.00,381.00 1139.00,381.00
-             1139.00,381.00 1392.67,269.67 1392.67,269.67
-             1392.67,269.67 1392.82,233.18 1392.82,233.18
-             1392.82,233.18 1139.12,106.00 1139.12,106.00
-             1139.12,106.00 1139.00,166.75 1139.00,166.75
-             1139.00,166.75 1314.62,248.44 1314.62,248.44
-             1314.62,248.44 1139.50,320.00 1139.50,320.00 Z" />
+  <path className="logo__path"id="right"
+        fill="none" stroke="black" strokeWidth="1"
+        d="M 881.50,386.00
+           C 881.50,386.00 881.00,447.00 881.00,447.00
+             881.00,447.00 1134.67,335.67 1134.67,335.67
+             1134.67,335.67 1134.82,299.18 1134.82,299.18
+             1134.82,299.18 881.12,172.00 881.12,172.00
+             881.12,172.00 881.00,232.75 881.00,232.75
+             881.00,232.75 1056.62,314.44 1056.62,314.44
+             1056.62,314.44 881.50,386.00 881.50,386.00 Z"/>
+
    
-
-
-    
-
-    
-
-    
+           
+        
 </svg>
-
-
+</div>
 
 
 
