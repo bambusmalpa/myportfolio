@@ -43,6 +43,12 @@ const SkillDescription=styled.div`
         100%{height:50px;
         opacity:1;}
     }
+    @media(min-width:767px){
+        height:100px;
+        width:150px;
+        font-size:20px;
+        border:none
+    }
 
 `
 
@@ -61,7 +67,7 @@ render(){
     
     return(
     <>
-
+        
         <SkillTag onClick={this.toggleActive} style={this.state.active?{color:"#6272ff"}:{color:"#F8F8F2"}} ><i key={this.props.txt.name} style={{color:this.props.txt.color}} className={this.props.txt.className}></i>{this.props.txt.name}</SkillTag>
         <SkillDescription className={this.state.active?"on":"off"}>{this.props.txt.description}</SkillDescription>
     </>)

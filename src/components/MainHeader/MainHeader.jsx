@@ -13,16 +13,13 @@ const HeaderContainer=styled.header`
     align-items:center;
     border-bottom:3px solid #4A4C58;
     @media(min-width:767px){
-        
+        width:10vw;
         height:0vh;
     }
         
 `
 const LogoContainer=styled.div`
         width:10vh;
-         
-         border-radius:100%;
-         background-color:#6272A4;
          
      }
      @media(min-width:767px){

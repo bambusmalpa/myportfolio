@@ -74,7 +74,7 @@ const skillArray=[{color:"#e34f26",className:"fab fa-html5", name:"index.html",d
 {color:"#9933CC",className:"fab fa-bootstrap",name:"bootstrap.css",description
 :"Bootstrapa używam głównie do stylowania prototypów prostych aplikacji."},
 {color:"#6cc24a",className:"fab fa-node",name:"node.js",description
-:"W Node stawiam dopiero pierwsze kroki. NPM używam w codziennej nauce."},
+:"W Node stawiam dopiero pierwsze kroki. NPM używam w codziennej nauce.",active:false},
 {color:"#c51162",className:"fab fa-sass",name:"style.sass",description
 :"Znam składnię, korzystam głównie w postaci biblioteki React Styled Components."},
 {color:"#00d8ff",className:"fab fa-react",name:"React.jsx",description
@@ -90,6 +90,9 @@ const skills=skillArray.map((el)=>{
 })
 
 class Skills extends React.Component {
+resetActive=()=>{
+
+}
    
 render(){
     return (

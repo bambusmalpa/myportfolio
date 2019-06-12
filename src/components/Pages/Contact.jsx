@@ -6,25 +6,33 @@ import styled from "styled-components"
 class Form extends React.Component {
   constructor(props){
     super(props);
-    this.state = {name: "", surname: "", email: "", message: "", sended:false};
+    this.state = {name: "", surname: "", email: "", message: "", sended:"Wyślij wiadomość"};
   }
 
   handleForm = e => {
     axios.post(
     "https://formcarry.com/s/H--MPhtz3Wh",
-
+      
       this.state, 
       {headers: {"Accept": "application/json"}}
       )
       .then(function (response) {
         console.log(response);
-        this.setState({sended:true})
+        console.log(e)
+        
+        
       })
       .catch(function (error) {
         console.log(error);
       });
+      console.log(this)
 
+      this.setState({name: "", surname: "", email: "", message: "", sended:"Wiadomość wysłana"})
     e.preventDefault();
+  }
+
+  messageSended=()=>{
+    this.setState({sended:true})
   }
 
   handleFields = e => this.setState({ [e.target.name]: e.target.value });
@@ -32,7 +40,7 @@ class Form extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleForm}>
-        <p>{this.state.sended?"Wiadomość wysłana":"Skontaktuj się ze mną"}</p>
+        <p>{this.state.sended}</p>
         <label htmlFor="name">Imię</label>
         <input type="text" id="name" name="name" onChange={this.handleFields} />
 
