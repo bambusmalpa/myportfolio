@@ -1,23 +1,27 @@
 import React from 'react';
 import styled from "styled-components"
 
+const Wrapp=styled.div`
+display:flex;
+flex-direction:column;
+@media(min-width:767px){
+       width:200px;
+    }
+`
+
 const SkillTag =styled.li`
     display:block;
     display:flex;
     align-items:center;
     justify-content:center;
     min-height:50px;
-    
     border:1px solid #282A36;
     transition:0.5s;
-    &>i{
-        
-    }
+    
     @media(min-width:767px){
-        height:100px;
-        width:150px;
-        font-size:25px;
-        border:none
+        border:none;
+        width:100%;
+        font-size:1.2rem;
     }
 `
 
@@ -44,11 +48,13 @@ const SkillDescription=styled.div`
         opacity:1;}
     }
     @media(min-width:767px){
-        height:100px;
-        width:150px;
-        font-size:20px;
-        border:none
-    }
+        &.description{
+            display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        }
+    
 
 `
 
@@ -58,19 +64,21 @@ state={
 }
 
 toggleActive=()=>{
+    if(window.innerWidth<=767){
     this.setState({
         active:!this.state.active
-    })
+    })}
 }
 
 render(){
     
     return(
     <>
-        
+        <Wrapp>
         <SkillTag onClick={this.toggleActive} style={this.state.active?{color:"#6272ff"}:{color:"#F8F8F2"}} ><i key={this.props.txt.name} style={{color:this.props.txt.color}} className={this.props.txt.className}></i>{this.props.txt.name}</SkillTag>
-        <SkillDescription className={this.state.active?"on":"off"}>{this.props.txt.description}</SkillDescription>
-    </>)
+        <SkillDescription className={this.state.active?"description on":"description off"}>{this.props.txt.description}</SkillDescription>
+        </Wrapp>
+        </>)
 }
 
 

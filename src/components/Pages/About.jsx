@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components"
 const AboutWraper=styled.section`
+padding-top:5vh;
     color:#F8F8F2;
     height:90%;
     width:80%;

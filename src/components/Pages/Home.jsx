@@ -1,24 +1,25 @@
 import React from 'react';
 import styled from "styled-components"
 const HomeWrapper= styled.section`
+   
+   >.home__logo{
+      width:90%;
+   }
 
->svg>.logo__path{
-   /* fill:#8BE9FD; */
-   fill:none;
-   /* stroke-dasharray:5390; */
-   stroke:black;
-   stroke-dashoffset:0;
-}
+
 
 `
 const Home = () => {
     return (
         <HomeWrapper>
-        <h1>WITAJ MA MOJEJ STRONIE</h1>
+        <h1 className="home__title">WITAJ MA MOJEJ STRONIE</h1>
         
         <svg className="home__logo"xmlns="http://www.w3.org/2000/svg"
      width="100%" height="100%"
      viewBox="0 0 1400 470">
+
+
+
 
     <path className="logo__path"id="left"
          strokeWidth="1"

@@ -6,20 +6,20 @@ import { faHome,faUserAlt, faTools, faLaptopCode, faMobileAlt} from '@fortawesom
 import styled from "styled-components";
 
 const MainNavList=styled.nav`
-  position:absolute;
-    display:block;
+    
+    .navList{
     top:100%;
     left:0;
-    z-index:10;
-    .navList{
-     display:flex;
-     justify-content:flex-start;
-     width:100vw;
-     height:10vh;
-     transition:1s;
-     transition-delay:0.5s;
-     background-color:#282A36;
-    
+    position:absolute;
+    flex-grow:1;
+    width:100vw;
+    height:10vh;
+    display:flex;
+    flex-direction:row;
+    transition:0.5s;
+    transition-delay:0.5s;
+    background-color:#282A36;
+   
     }
     .navList.off{
       transform:translateX(-100%)
@@ -27,50 +27,41 @@ const MainNavList=styled.nav`
 
 
     .navList__li{
-      margin:0;
-      display:flex;
+      display:block;
       width:20%;
-      justify-content:center;
-      align-items:center;
+      
     }
 
 
     .navList__li>.navList__link{
-      text-decoration:none;
-     display:block;
-     line-height:10vh;
-     width:100%;
-     text-align:center;
-     color:#6272A4;
-     font-size:1.2rem;
-     transition:0.5s;
-     
+      display:flex;
+      width:100%;
+      height:100%;
+      color:#6272A4;
+      justify-content:center;
+      align-items:center;
+      transition:1s;
     }
     .navList__li>.navList__link.active{
-      font-size:1.2rem;
       color:#F8F8F2;
-      
       border-bottom:1px solid #FF79C6;
     }
 
     @media(min-width:767px){
       .navList{
-        
-        flex-direction:column;
         width:5vw;
-        height:95vh;
-        border-right:1px solid #000000;
+        height:50vh;;
+        position:static;
+        flex-direction:column;
+       
       }
       .navList.off{
-      transform:translateX(0%)
+        transform:translateX(0)
     
     }
       .navList__li{
-      margin:0;
-      display:flex;
-      width:100%;
-      justify-content:center;
-      align-items:center;
+        width:100%;
+        height:10vh;
     
       }`
 

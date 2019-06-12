@@ -1,11 +1,17 @@
 import React from 'react';
+import styled from "styled-components"
+
+const LogoSvg=styled.svg`
+
+`
 
 const Logo = () => {
     return ( 
         <>
-        <svg xmlns="http://www.w3.org/2000/svg"
+        <LogoSvg xmlns="http://www.w3.org/2000/svg"
      width="100%" height="100%"
      viewBox="0 0 1400 470">
+       
     <path id="right"
         fill="#F8F8F2" stroke="black" strokeWidth="1"
         d="M 1139.50,320.00
@@ -69,7 +75,7 @@ const Logo = () => {
              81.64,247.64 257.00,319.91 257.00,319.91
              257.00,319.91 256.67,380.00 256.67,380.00 Z
            M 327.94,432.94" />
-</svg>
+</LogoSvg>
 
 </>
 

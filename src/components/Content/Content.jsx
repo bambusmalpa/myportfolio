@@ -11,6 +11,8 @@ const ContentContainer=styled.main`
     flex: 1;
     background-color:#44475A;
     transition:0.5s;
+    overflow-x: hidden;
+    min-height:85vh;
     &.small{
         padding-top:10vh;
     }
@@ -20,8 +22,8 @@ const ContentContainer=styled.main`
     }
     @media(min-width:767px){
         flex-direction:row;
-        height:100vh;
-       margin-left:5vw;
+        height:95vh;
+       
        &.small{
         padding-top:0vh;
         

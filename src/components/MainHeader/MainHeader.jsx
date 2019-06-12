@@ -6,28 +6,33 @@ import Logo from "./logo/Logo"
 
 const HeaderContainer=styled.header`
     position:relative;
+    width:100%;
+    height:10vh;
     background-color:#282A36;
-    min-height:10vh;
     display:flex;
     justify-content:space-around;
     align-items:center;
-    border-bottom:3px solid #4A4C58;
+   
+  
+    
+    
     @media(min-width:767px){
-        width:10vw;
-        height:0vh;
+        flex-direction:column;
+        width:5vw;
+        height:95vh;
+        justify-content:flex-start;
+        align-items:center;
     }
         
 `
 const LogoContainer=styled.div`
-        width:10vh;
+    width:20vw;
          
      }
      @media(min-width:767px){
-        height:10vh;
-       width:10vw;
-       border-right:1px solid #000000;
-
-
+        width:5vw;
+        height:5vw;
+        background-color:#000000;
      }
 
 

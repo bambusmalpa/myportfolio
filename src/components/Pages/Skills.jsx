@@ -53,16 +53,16 @@ const SkilsWrapper=styled.section`
         >ul{
         margin-left:auto;
         margin-right:auto;
-        justify-content:space-around;
+        justify-content:space-between;
         display:flex;
+        flex-wrap:wrap;
         flex-direction:row;
         height:85vh;
-        flex-wrap:wrap;
-        width:50vw;
+        width:80vw;
 
        
     }
-    }
+     
 
 `
 const skillArray=[{color:"#e34f26",className:"fab fa-html5", name:"index.html",description
@@ -90,9 +90,6 @@ const skills=skillArray.map((el)=>{
 })
 
 class Skills extends React.Component {
-resetActive=()=>{
-
-}
    
 render(){
     return (
@@ -100,7 +97,7 @@ render(){
             
             <SkilsWrapper>
                
-                <SkillsTitle>UMIEJĘTNOŚCI</SkillsTitle>
+                <SkillsTitle>UMIEJĘTNOŚCI I TECHNOLOGIE</SkillsTitle>
                 <ul>
                {skills}
                </ul>
