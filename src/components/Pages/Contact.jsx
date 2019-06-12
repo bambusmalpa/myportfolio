@@ -1,11 +1,12 @@
 import React from "react";
 import axios from "axios";
+import styled from "styled-components"
 
 
 class Form extends React.Component {
   constructor(props){
     super(props);
-    this.state = {name: "", surname: "", email: "", message: ""};
+    this.state = {name: "", surname: "", email: "", message: "", sended:false};
   }
 
   handleForm = e => {
@@ -17,6 +18,7 @@ class Form extends React.Component {
       )
       .then(function (response) {
         console.log(response);
+        this.setState({sended:true})
       })
       .catch(function (error) {
         console.log(error);
@@ -30,19 +32,20 @@ class Form extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleForm}>
-        <label htmlFor="name">Name</label>
+        <p>{this.state.sended?"Wiadomość wysłana":"Skontaktuj się ze mną"}</p>
+        <label htmlFor="name">Imię</label>
         <input type="text" id="name" name="name" onChange={this.handleFields} />
 
-        <label htmlFor="surname">Surname</label>
+        <label htmlFor="surname">Nazwisko</label>
         <input type="text" id="surname" name="surname" onChange={this.handleFields} />
 
         <label htmlFor="email">Email</label>
         <input type="email" id="email" name="email" onChange={this.handleFields} />
 
-        <label htmlFor="message">Your Message</label>
+        <label htmlFor="message">Twoja wiadomość</label>
         <textarea name="message" id="message" onChange={this.handleFields}></textarea>
-
-        <button type="submit">Send</button>
+        
+        <button type="submit">WYŚLIJ</button>
       </form>
     );
   }
