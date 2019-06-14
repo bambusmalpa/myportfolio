@@ -9,6 +9,7 @@ const ElementWindow=styled.div`
     background-size:cover;
     overflow:hidden;
     position:relative;
+    animation: getIn 1s;
     @media(min-width:767px){
         width:20vw;
         height:20vw;

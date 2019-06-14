@@ -6,20 +6,36 @@ import ReactMapboxGl  from "react-mapbox-gl";
 const Map = ReactMapboxGl({
   accessToken: "pk.eyJ1IjoiYmFtYnVzbWFscGEiLCJhIjoiY2p3dWE2ZncxMDkwazN5bW9zZm0weXBwdSJ9.5d-6mqfIaZJudgRWWdgd2g",
   interactive:false,
-  onStyleLoad: (map, loadEvent) => {}
+  
 });
 
-const coordinates=[ 22.004722, 50.033611];
 const ContactSection=styled.section`
 height:120vh;
 display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:space-around;
+
   >.contact__element{
     border:2px solid #282A36;;
     width:90vw;
     height:90vw;
+    animation: getIn 1s;
+  }
+
+
+
+  @media(min-width:767px){
+    flex-direction:row;
+    height:95vh;
+    width:100%;
+
+    >.contact__element{
+    border:2px solid #282A36;;
+    width:30vw;
+    height:30vw;
+  }
+
   }
 
 `
@@ -69,6 +85,7 @@ class Form extends React.Component {
   render() {
     return (
       <ContactSection>
+
       <FormWrapper className="contact__element" onSubmit={this.handleForm}>
         <p>{this.state.sended}</p>
         <label htmlFor="name">Imię</label>
@@ -88,7 +105,7 @@ class Form extends React.Component {
       </FormWrapper>
 
       <MapWrapper className="contact__element">
-      <Map center={coordinates}
+      <Map center={[ 22.004722, 50.033611]}
       style="mapbox://styles/bambusmalpa/cjwvtcdvo0fhi1cnjyu7tnf2d"
       
       containerStyle={{
