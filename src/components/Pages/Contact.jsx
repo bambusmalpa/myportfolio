@@ -1,7 +1,36 @@
 import React from "react";
 import axios from "axios";
 import styled from "styled-components"
+import ReactMapboxGl  from "react-mapbox-gl";
 
+const Map = ReactMapboxGl({
+  accessToken: "pk.eyJ1IjoiYmFtYnVzbWFscGEiLCJhIjoiY2p3dWE2ZncxMDkwazN5bW9zZm0weXBwdSJ9.5d-6mqfIaZJudgRWWdgd2g",
+  interactive:false,
+  onStyleLoad: (map, loadEvent) => {}
+});
+
+const coordinates=[ 22.004722, 50.033611];
+const ContactSection=styled.section`
+height:120vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-around;
+  >.contact__element{
+    border:2px solid #282A36;;
+    width:90vw;
+    height:90vw;
+  }
+
+`
+const FormWrapper=styled.form`
+  
+`
+const MapWrapper=styled.div`
+
+
+
+`
 
 class Form extends React.Component {
   constructor(props){
@@ -39,7 +68,8 @@ class Form extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleForm}>
+      <ContactSection>
+      <FormWrapper className="contact__element" onSubmit={this.handleForm}>
         <p>{this.state.sended}</p>
         <label htmlFor="name">Imię</label>
         <input type="text" id="name" name="name" onChange={this.handleFields} />
@@ -54,7 +84,20 @@ class Form extends React.Component {
         <textarea name="message" id="message" onChange={this.handleFields}></textarea>
         
         <button type="submit">WYŚLIJ</button>
-      </form>
+      
+      </FormWrapper>
+
+      <MapWrapper className="contact__element">
+      <Map center={coordinates}
+      style="mapbox://styles/bambusmalpa/cjwvtcdvo0fhi1cnjyu7tnf2d"
+      
+      containerStyle={{
+        height: "100%",
+        width: "100%"}}>
+      </Map>
+
+      </MapWrapper>
+      </ContactSection>
     );
   }
 }
