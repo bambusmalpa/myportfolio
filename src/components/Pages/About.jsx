@@ -85,6 +85,7 @@ const About = () => {
     return (
     <AboutWraper>
     <h1 className="about__title">O MNIE</h1>
+    <p className="about__paragraph">Nazywam się Marcin Krawiec</p>
     <p className="about__paragraph">Zaintersowałem się front-endem pod koniec 2017 roku, przypadkiem trafiłem na film na YouTube pokazujący podstawy HTMLa.</p>
     <p className="about__paragraph">Zafascynowało mnie że prosty tekst napisany w "Notatniku" można zmienić w żywy mechanizm i pokazać całemu światu.</p>
     <p className="about__paragraph">Uczę się przy pomocy kursów internetowych, czytam dokumentację, pozyskuje informacje na forach programistycznych.</p>
