@@ -30,7 +30,7 @@ justify-content:space-around;
   >.contact__element{
     border:2px solid #282A36;;
     width:90vw;
-    height:100%;
+    height:90vw;
     animation: getIn 1s;
   }
 
