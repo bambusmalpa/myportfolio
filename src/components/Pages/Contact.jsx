@@ -120,16 +120,16 @@ class Form extends React.Component {
       <FormWrapper className="contact__element" onSubmit={this.handleForm}>
 
         {this.state.sended?<div className="form__message">Wiadomość wysłana</div>:null}
-        <input required className="input input--small" type="text" id="name" name="name" onChange={this.handleFields} placeholder="Podaj imię"/>
+        <input required className="input input--small" type="text" id="name" name="name" onChange={this.handleFields} placeholder="Imię"/>
 
         
-        <input required className="input input--small" type="text" id="subject" name="subject" onChange={this.handleFields} placeholder="temat"/>
+        <input required className="input input--small" type="text" id="subject" name="subject" onChange={this.handleFields} placeholder="Temat"/>
 
         
-        <input required className="input input--small" type="email" id="email" name="email" onChange={this.handleFields}  placeholder="email"/>
+        <input required className="input input--small" type="email" id="email" name="email" onChange={this.handleFields}  placeholder="E-mail"/>
 
         
-        <textarea required className="input input--big" name="message" id="message" onChange={this.handleFields} placeholder="Napisz wiadomość"></textarea>
+        <textarea required className="input input--big" name="message" id="message" onChange={this.handleFields} placeholder="Wiadomość"></textarea>
         
         <button  className="input input--button" type="submit">WYŚLIJ</button>
       
