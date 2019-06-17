@@ -9,6 +9,17 @@ const Map = ReactMapboxGl({
   
 });
 
+const ContactTitle=styled.h1`
+color:#F8F8F2;
+text-align:center;
+height:10vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+
+`
+
 const ContactSection=styled.section`
 height:120vh;
 display:flex;
@@ -19,7 +30,7 @@ justify-content:space-around;
   >.contact__element{
     border:2px solid #282A36;;
     width:90vw;
-    height:90vw;
+    height:100%;
     animation: getIn 1s;
   }
 
@@ -27,7 +38,7 @@ justify-content:space-around;
 
   @media(min-width:767px){
     flex-direction:row;
-    height:95vh;
+    height:85vh;
     width:100%;
 
     >.contact__element{
@@ -40,6 +51,26 @@ justify-content:space-around;
 
 `
 const FormWrapper=styled.form`
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:space-around;
+  >.input{
+    border:none;
+    width:90%;
+    height:10%;
+    background-color:#282A36;
+    color:#F8F8F2;
+  }
+  >.input--big{
+    height:30%;
+  }
+  >.form__message{
+    color:#50FA7B;
+  }
+
+  
+
   
 `
 const MapWrapper=styled.div`
@@ -51,7 +82,7 @@ const MapWrapper=styled.div`
 class Form extends React.Component {
   constructor(props){
     super(props);
-    this.state = {name: "", surname: "", email: "", message: "", sended:"Wyślij wiadomość"};
+    this.state = {name: "", subject: "", email: "", message: "",sended:false};
   }
 
   handleForm = e => {
@@ -62,8 +93,6 @@ class Form extends React.Component {
       {headers: {"Accept": "application/json"}}
       )
       .then(function (response) {
-        console.log(response);
-        console.log(e)
         
         
       })
@@ -72,7 +101,7 @@ class Form extends React.Component {
       });
       console.log(this)
 
-      this.setState({name: "", surname: "", email: "", message: "", sended:"Wiadomość wysłana"})
+      this.setState({name: "", subject: "", email: "", message: "",sended:true})
     e.preventDefault();
   }
 
@@ -84,23 +113,25 @@ class Form extends React.Component {
 
   render() {
     return (
+      <>
+      <ContactTitle>KONTAKT</ContactTitle>
       <ContactSection>
-
+      
       <FormWrapper className="contact__element" onSubmit={this.handleForm}>
-        <p>{this.state.sended}</p>
-        <label htmlFor="name">Imię</label>
-        <input type="text" id="name" name="name" onChange={this.handleFields} />
 
-        <label htmlFor="surname">Nazwisko</label>
-        <input type="text" id="surname" name="surname" onChange={this.handleFields} />
+        {this.state.sended?<div className="form__message">Wiadomość wysłana</div>:null}
+        <input required className="input input--small" type="text" id="name" name="name" onChange={this.handleFields} placeholder="Podaj imię"/>
 
-        <label htmlFor="email">Email</label>
-        <input type="email" id="email" name="email" onChange={this.handleFields} />
-
-        <label htmlFor="message">Twoja wiadomość</label>
-        <textarea name="message" id="message" onChange={this.handleFields}></textarea>
         
-        <button type="submit">WYŚLIJ</button>
+        <input required className="input input--small" type="text" id="subject" name="subject" onChange={this.handleFields} placeholder="temat"/>
+
+        
+        <input required className="input input--small" type="email" id="email" name="email" onChange={this.handleFields}  placeholder="email"/>
+
+        
+        <textarea required className="input input--big" name="message" id="message" onChange={this.handleFields} placeholder="Napisz wiadomość"></textarea>
+        
+        <button  className="input input--button" type="submit">WYŚLIJ</button>
       
       </FormWrapper>
 
@@ -115,6 +146,7 @@ class Form extends React.Component {
 
       </MapWrapper>
       </ContactSection>
+      </>
     );
   }
 }

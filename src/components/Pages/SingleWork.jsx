@@ -11,7 +11,7 @@ const ElementWindow=styled.div`
     position:relative;
     animation: getIn 1s;
     @media(min-width:767px){
-        width:20vw;
+        width:30%;
         height:20vw;
     }
 `

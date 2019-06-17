@@ -71,11 +71,11 @@ const SkilsWrapper=styled.section`
 
 `
 const skillArray=[{color:"#e34f26",className:"fab fa-html5", name:"index.html",description
-:"W projektach korzystam z semantycznych tagów HTML, staram sie dbać o jak najlepszą dostępność."},
+:"W projektach korzystam z semantycznych tagów HTML, staram się dbać o jak najlepszą dostępność."},
 {color:"#0099e5",className:"fab fa-css3-alt",name:"style.css",description
 :"Świetnie radzę sobie z nowymi funkcjami CSS jak flex i grid."},
 {color:"#f7df1e",className:"fab fa-js",name:"sctipt.js",description
-:"Znam metody tablic, stringów i objektów. Potrafię odnaleźć się w asynchronicznym JS, korzystam z API."},
+:"Znam metody tablic, stringów i obiektów. Potrafię odnaleźć się w asynchronicznym JS, korzystam z API."},
 {color:"#9933CC",className:"fab fa-bootstrap",name:"bootstrap.css",description
 :"Bootstrapa używam głównie do stylowania prototypów prostych aplikacji."},
 {color:"#6cc24a",className:"fab fa-node",name:"node.js",description
@@ -87,7 +87,7 @@ const skillArray=[{color:"#e34f26",className:"fab fa-html5", name:"index.html",d
 {color:"#F1502F",className:"fab fa-git-alt",name:".git",description
 :"Znam podstawowe komendy;D"},
 {color:"#cc0000",className:"fas fa-file-image",name:"Photoshop.psd",description
-:"Na codzień używam Gimpa, pracowałem z grafiką wektorową."},
+:"Głównie używam Gimpa, pracowałem z grafiką wektorową."},
 ];
 
 const skills=skillArray.map((el)=>{
