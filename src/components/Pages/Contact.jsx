@@ -21,7 +21,7 @@ align-items:center;
 `
 
 const ContactSection=styled.section`
-height:120vh;
+height:200vw;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -137,7 +137,7 @@ class Form extends React.Component {
 
       <MapWrapper className="contact__element">
       <Map center={[ 22.004722, 50.033611]}
-      style="mapbox://styles/bambusmalpa/cjwvtcdvo0fhi1cnjyu7tnf2d"
+      style={"mapbox://styles/bambusmalpa/cjwvtcdvo0fhi1cnjyu7tnf2d"}
       
       containerStyle={{
         height: "100%",

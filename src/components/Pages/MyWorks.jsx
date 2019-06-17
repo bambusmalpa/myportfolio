@@ -16,7 +16,7 @@ const WorksTitle=styled.h1`
 
 const WorksWrapper=styled.section`
     width:80%;
-    height:150vh;
+    height:300vw;
     display:flex;
     flex-direction:column;
     justify-content:space-around;

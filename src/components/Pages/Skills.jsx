@@ -91,7 +91,7 @@ const skillArray=[{color:"#e34f26",className:"fab fa-html5", name:"index.html",d
 ];
 
 const skills=skillArray.map((el)=>{
-    return <SingleSkill className="SkillWrapper__element"txt={el}/>
+    return <SingleSkill key={el.name} className="SkillWrapper__element"txt={el}/>
 })
 
 class Skills extends React.Component {
