@@ -6,7 +6,7 @@ height:85%;
    padding-top:10vh;
    text-align:center;
    color:#F8F8F2;
-        &::before{
+        /* &::before{
       
         color:#BD93F9;
         content:"<h1>";
@@ -14,9 +14,9 @@ height:85%;
         opacity:0.5;
         animation:fadeIn 0.5s;
         font-weight:400;
-    }
+    } */
 
-    &::after{
+    /* &::after{
         
         content:"</h1>";
         color:#BD93F9;
@@ -24,7 +24,7 @@ height:85%;
         opacity:0.5;
         font-weight:400;
         animation:fadeIn 0.5s;
-    }
+    } */
    
    
 }

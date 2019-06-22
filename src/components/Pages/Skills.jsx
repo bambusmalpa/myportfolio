@@ -10,7 +10,7 @@ const SkillsTitle=styled.h1`
     margin:5%;
 
 @media(min-width:767px){
-        &::before{
+        /* &::before{
        
         color:#BD93F9;
         content:"<h1>";
@@ -18,9 +18,9 @@ const SkillsTitle=styled.h1`
         opacity:0.5;
         animation:fadeIn 0.5s;
         font-weight:400;
-    }
+    } */
 
-    &::after{
+    /* &::after{
         
         content:"</h1>";
         color:#BD93F9;
@@ -28,7 +28,7 @@ const SkillsTitle=styled.h1`
         opacity:0.5;
         font-weight:400;
         animation:fadeIn 0.5s;
-    }
+    } */
     }
 
     
@@ -86,7 +86,7 @@ const skillArray=[{color:"#e34f26",className:"fab fa-html5", name:"index.html",d
 :"Moja sympatia do Reacta zaczęła się z pierwszym napisanym stanowym komponentem;D"},
 {color:"#F1502F",className:"fab fa-git-alt",name:".git",description
 :"Znam podstawowe komendy;D"},
-{color:"#cc0000",className:"fas fa-file-image",name:"Photoshop.psd",description
+{color:"#cc0000",className:"fa fa-gimp",name:"Photoshop.psd",description
 :"Głównie używam Gimpa, pracowałem z grafiką wektorową."},
 ];
 
