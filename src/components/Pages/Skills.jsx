@@ -85,9 +85,9 @@ const skillArray=[{color:"#e34f26",className:"fab fa-html5", name:"index.html",d
 {color:"#00d8ff",className:"fab fa-react",name:"React.jsx",description
 :"Moja sympatia do Reacta zaczęła się z pierwszym napisanym stanowym komponentem;D"},
 {color:"#F1502F",className:"fab fa-git-alt",name:".git",description
-:"Znam podstawowe komendy;D"},
+:"Swobodnie używam systemów kontroli wersji:D"},
 {color:"#cc0000",className:"fa fa-gimp",name:"Photoshop.psd",description
-:"Głównie używam Gimpa, pracowałem z grafiką wektorową."},
+:"Do obróbki grafik głównie używam Gimpa, pracowałem z grafiką wektorową."},
 ];
 
 const skills=skillArray.map((el)=>{
