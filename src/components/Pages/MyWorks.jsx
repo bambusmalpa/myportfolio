@@ -33,14 +33,14 @@ const WorksWrapper=styled.section`
     min-height:80vh;
     margin-bottom:10vh;
     @media(min-width:576px){
-        grid-template-rows:40vw 40vw 40vw 40vw ;
+        grid-template-rows:40vw 40vw 40vw 40vw 40vw;
         grid-template-columns:40vw 40vw ;}
     @media(min-width:768px){
-        grid-template-rows:25vh 25vh 25vh ;
+        grid-template-rows:25vw 25vw 25vw ;
         grid-template-columns:25vw 25vw 25vw;
         }
     @media(min-width:1200px){
-        grid-template-rows:40vh 40vh ;
+        grid-template-rows:40vh 40vh 40vh ;
         grid-template-columns:20vw 20vw 20vw 20vw ;
         
     }
