@@ -41,7 +41,7 @@ margin-bottom:10vh;
     flex-direction:row;
     height:85vh;
     width:100%;
-
+    margin-bottom:0vh;
     >.contact__element{
     border:2px solid #282A36;;
     width:25vw;
