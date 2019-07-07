@@ -12,7 +12,7 @@ const ContentContainer=styled.main`
     background-color:#44475A;
     transition:0.5s;
     overflow-x: hidden;
-    min-height:85vh;
+    min-height:70vh;
     &.small{
         margin-top:10vh;
         
