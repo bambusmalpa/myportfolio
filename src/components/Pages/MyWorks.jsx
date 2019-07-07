@@ -23,7 +23,7 @@ const WorksTitle=styled.h1`
 
 
 const WorksWrapper=styled.section`
-    width:80vw;
+    min-width:80vw;
     display:grid;
     grid-template-columns:80vw;
     grid-template-rows:80vw 80vw 80vw 80vw 80vw 80vw 80vw 80vw;
