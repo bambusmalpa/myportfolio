@@ -171,10 +171,11 @@ class Form extends React.Component {
       <MapWrapper className="contact__element">
       <Map center={[ 22.004722, 50.033611]}
       style={"mapbox://styles/bambusmalpa/cjwvtcdvo0fhi1cnjyu7tnf2d"}
-      
+    
       containerStyle={{
         height: "100%",
         width: "100%"}}>
+      
       </Map>
 
       </MapWrapper>
