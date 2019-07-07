@@ -11,7 +11,7 @@ const Foot=styled.footer`
     align-items:center;
     border-top:1px solid #BD93F9;
     box-sizing:border-box;
-
+    
 `
 
 const MainFooter = () => {
