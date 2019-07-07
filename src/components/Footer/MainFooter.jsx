@@ -15,7 +15,7 @@ const Foot=styled.footer`
 `
 
 const MainFooter = () => {
-    return ( <Foot>made with  <i style={{color:"#F21A25"}} className="fas fa-heart"></i>  to  <i style={{color:"#61DBFB"}} className="fab fa-react fa-spin"></i> by bambusMalpa &copy; 2019</Foot>);
+    return ( <Foot>made with&nbsp;<i style={{color:"#F21A25"}} className="fas fa-heart"></i>&nbsp;to&nbsp;<i style={{color:"#61DBFB"}} className="fab fa-react fa-spin"></i>&nbsp;by bambusMalpa&copy; 2019</Foot>);
 }
  
 export default MainFooter;
