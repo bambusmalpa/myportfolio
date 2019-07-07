@@ -2,8 +2,8 @@ import React from 'react';
 import styled from "styled-components"
 
 const ElementWindow=styled.div`
-    width:80vw;
-    height:80vw;
+    width:100%;
+    height:100%;
     background-position:center center;
     background-origin:content-box;
     background-size:cover;
@@ -12,8 +12,7 @@ const ElementWindow=styled.div`
     animation: getIn 1s;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     @media(min-width:767px){
-        width:20vw;
-        height:18vw;
+       
     }
 `
 const ElementWrapper=styled.div`
@@ -64,16 +63,18 @@ class SingleWork extends React.Component {
             active:!this.state.active
         })
     }
-   
+    
     render(){
+        
     return (
-        <>
+        
+        <div>
         <ElementWindow onClick={this.toggleActive} style={{backgroundImage:`url(${this.props.data.foto})`}}>
         <ElementWrapper onClick={this.toggleActive} className={this.state.active?"on":"off"}>
             
             <p className="work__content description">{this.props.data.desc}</p>
             <div className="work__content technologies">{this.props.data.tech.map((el)=>{
-                return <i className={el.className} style={{color:el.color}}></i>
+                return <i key={el.className} className={el.className} style={{color:el.color}}></i>
             })}
             </div>
             <div className="work__content links">
@@ -81,7 +82,8 @@ class SingleWork extends React.Component {
             <a href={this.props.data.github} rel="noopener noreferrer" target="_blank"><i className="fab fa-github"></i>GitHub</a>
             </div>
             </ElementWrapper>
-            </ElementWindow></>
+            </ElementWindow>
+            </div>
  );}
 }
  

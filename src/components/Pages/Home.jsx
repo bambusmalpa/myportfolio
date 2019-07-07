@@ -11,9 +11,10 @@ const HomeWrapper= styled.section`
     >.home__title{
         color:#F8F8F2;
         width:100%;
-        height:10vh;
+        min-height:10vh;
         text-align:center;
         font-size:3rem;
+        animation:fadeIn 0.5s;
         @media (min-width:767px){
         margin-top:5vh;
        }

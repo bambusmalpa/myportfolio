@@ -10,7 +10,6 @@ const MainNavList=styled.nav`
     top:100%;
     left:0;
     position:absolute;
-   
     width:100%;
     height:10vh;
     display:flex;
@@ -41,9 +40,7 @@ const MainNavList=styled.nav`
       justify-content:center;
       align-items:center;
       transition:1s;
-     >.navList__desc{
-       display:none;
-     }
+    
     }
     .navList__li>.navList__link.active{
       color:#F8F8F2;
@@ -52,7 +49,7 @@ const MainNavList=styled.nav`
 
     @media(min-width:767px){
       .navList{
-        width:5vw;
+        width:10vw;
         height:50vh;
         position:static;
         flex-direction:column;
@@ -69,7 +66,6 @@ const MainNavList=styled.nav`
         >.navList__link{
           z-index:10;
           width:100%;
-   
         }
         
        

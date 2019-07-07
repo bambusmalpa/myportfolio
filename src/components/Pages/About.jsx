@@ -19,7 +19,7 @@ const AboutWraper=styled.section`
         font-size:1rem;
         margin-bottom:1rem;
         @media(min-width:767px){
-        font-size:2rem;}
+        font-size:1.5rem;}
     }
 
    

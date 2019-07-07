@@ -2,49 +2,50 @@ import React from 'react';
 import SingleSkill from "./SingleSkill"
 import styled from 'styled-components' 
 
-const SkillsTitle=styled.h1`
-    font-size:3rem;
-    height:10vh;
-    color:#F8F8F2;
-    text-align:center;
 
-    
-`
 
-const SkilsWrapper=styled.section`
-    width:100%;
+const SkillsWrapper=styled.section`
     display:flex;
-    color:#F8F8F2;
-    list-style:none;
-    background-color:#44475A;
-    
+    height:100%;
     flex-direction:column;
-    justify-content:flex-start;
-  
-
+    align-items:center;
     
-    @media(min-width:767px){
-        height:90%;
-        
+    >.skillsTitle{
+        display:flex;
         justify-content:center;
-        >ul{
-        margin-left:auto;
-        margin-right:auto;
-        justify-content:space-between;
+        align-items:center;
+        font-size:3rem;
+        display:block;
+        min-height:10vh;
+        color:#F8F8F2;
+        text-align:center;
+        animation:fadeIn 0.5s;
+    }
+    >.skillsList{
+        min-height:50vh;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-self:center;
+    }
+    @media(min-width:767px){
+        
+        >.skillsTitle{
+            height:10vh;
+        }
+        >.skillsList{
+       
+        width:80%;
         display:flex;
         flex-wrap:wrap;
         flex-direction:row;
-        height:85vh;
-        width:80vw;
-        animation:getIn 1s;
-        @keyframes getIn {
-           from{opacity:0}
-           to{opacity:1}
-       }
+        justify-content: space-around;
+        align-items:space-around;
+        }
     }
-       
-    }
-     
+   
+    
+    
 
 `
 const skillArray=[{color:"#e34f26",className:"fab fa-html5", name:"index.html",description
@@ -77,14 +78,14 @@ render(){
     return (
         
             
-            <SkilsWrapper>
+            <SkillsWrapper>
                
-                <SkillsTitle>UMIEJĘTNOŚCI I TECHNOLOGIE</SkillsTitle>
-                <ul>
+                <h1 className="skillsTitle">UMIEJĘTNOŚCI I TECHNOLOGIE</h1>
+                <ul className="skillsList">
                     {skills}
                </ul>
                
-        </SkilsWrapper>
+        </SkillsWrapper>
        
     );}
 }

@@ -16,12 +16,12 @@ height:10vh;
 display:flex;
 justify-content:center;
 align-items:center;
-
-
+font-size:3rem;
+animation:fadeIn 0.5s;
 `
 
 const ContactSection=styled.section`
-height:200vw;
+height:300vw;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -29,8 +29,8 @@ justify-content:space-around;
 
   >.contact__element{
     border:2px solid #282A36;;
-    width:90vw;
-    height:90vw;
+    width:80vw;
+    height:80vw;
     animation: getIn 1s;
   }
 
@@ -43,8 +43,8 @@ justify-content:space-around;
 
     >.contact__element{
     border:2px solid #282A36;;
-    width:30vw;
-    height:30vw;
+    width:25vw;
+    height:25vw;
   }
 
   }
@@ -74,9 +74,21 @@ justify-content:space-around;
   
 `
 const MapWrapper=styled.div`
-
-
-
+`
+const PhoneEmailWrapper=styled.div`
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  font-size:0.8rem;
+  color:#F8F8F2;
+  >.icon{
+    font-size:3rem;
+  }
+  @media(min-width:992px){
+    font-size:1rem;
+  }
+  
 `
 
 class Form extends React.Component {
@@ -84,6 +96,8 @@ class Form extends React.Component {
     super(props);
     this.state = {name: "", subject: "", email: "", message: "",sended:false};
   }
+
+  
 
   handleForm = e => {
     axios.post(
@@ -111,12 +125,30 @@ class Form extends React.Component {
 
   handleFields = e => this.setState({ [e.target.name]: e.target.value });
 
+  generateNumber=()=>{
+    const phoneNumber=[6,9,6,6,9,7,4,8,0];
+    return phoneNumber.join("")
+  }
+  generateMail=()=>{
+    const email=["marcin","krawiec","rzeszow","@","gmail",".","com"];
+  return email.join("")
+  }
+
+ 
+
+
   render() {
     return (
       <>
       <ContactTitle>KONTAKT</ContactTitle>
       <ContactSection>
-      
+      <PhoneEmailWrapper  className="contact__element">
+      <i class="icon fas fa-mobile-alt"></i><span className="contactData" id="phone">{this.generateNumber()}</span>
+          <i class="icon fas fa-envelope"></i><span className="contactData" id="email">{this.generateMail()}</span>
+          <i class="icon fab fa-github"></i><span className="contactData">
+          github.com/bambusmalpa
+          </span>
+      </PhoneEmailWrapper>
       <FormWrapper className="contact__element" onSubmit={this.handleForm}>
 
         {this.state.sended?<div className="form__message">Wiadomość wysłana</div>:null}
@@ -145,6 +177,10 @@ class Form extends React.Component {
       </Map>
 
       </MapWrapper>
+      
+
+
+      
       </ContactSection>
       </>
     );

@@ -12,27 +12,35 @@ import SingleWork from './SingleWork';
 
 const WorksTitle=styled.h1`
     color:#F8F8F2;
-    height:10vh;
+    min-height:10vh;
+    font-size:3rem;
     display:flex;
     justify-content:center;
     align-items:center;
+    text-align:center;
+    animation:fadeIn 0.5s;
 `
 
 
 const WorksWrapper=styled.section`
     width:80vw;
     display:grid;
-    grid-template-columns:1fr;
+    grid-template-columns:80vw;
+    grid-template-rows:80vw 80vw 80vw 80vw 80vw 80vw 80vw 80vw;
     margin-left:auto;
     margin-right:auto;
-    @media(min-width:767px){
-        height:70vh;
-        grid-template-rows:1fr 1fr ;
-        grid-template-columns:1fr 1fr 1fr 1fr;
-        margin-top:5vh;
-        margin-bottom:15vh;
+    grid-gap: 1em;
+    @media(min-width:576px){
+        grid-template-rows:40vw 40vw 40vw 40vw ;
+        grid-template-columns:40vw 40vw ;}
+    @media(min-width:768px){
+        grid-template-rows:25vh 25vh 25vh ;
+        grid-template-columns:25vw 25vw 25vw;}
+    @media(min-width:1200px){
+        grid-template-rows:40vh 40vh ;
+        grid-template-columns:20vw 20vw 20vw 20vw ;
+        
     }
-
 `
 
 const projects=[{name:"Zegar binarny", link:"https://binaryclock.netlify.com/",github:"https://github.com/bambusmalpa/binary-clock",foto:image01,desc:"Moje początki z JS, zegar pokazujący godzinę w formie kodu binarnego",tech:[{color:"#e34f26",className:"fab fa-html5"},{color:"#0099e5",className:"fab fa-css3-alt"},{color:"#f7df1e",className:"fab fa-js"}]},
