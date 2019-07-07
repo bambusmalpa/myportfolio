@@ -4,6 +4,7 @@ import styled from "styled-components"
 const Wrapp=styled.div`
 display:flex;
 flex-direction:column;
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 @media(min-width:767px){
        width:200px;
      
@@ -49,7 +50,7 @@ const SkillDescription=styled.div`
     }
     @media(min-width:767px){
         &.description{
-            display:flex;
+        display:flex;
         align-items:center;
         justify-content:center;
         text-align:justify;

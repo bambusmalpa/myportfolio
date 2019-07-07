@@ -4,15 +4,16 @@ import styled from "styled-components"
 const ElementWindow=styled.div`
     width:80vw;
     height:80vw;
-    background-position:center;
+    background-position:center center;
     background-origin:content-box;
     background-size:cover;
     overflow:hidden;
     position:relative;
     animation: getIn 1s;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     @media(min-width:767px){
         width:20vw;
-        height:20vw;
+        height:18vw;
     }
 `
 const ElementWrapper=styled.div`

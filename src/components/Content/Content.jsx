@@ -14,10 +14,11 @@ const ContentContainer=styled.main`
     overflow-x: hidden;
     min-height:85vh;
     &.small{
-        padding-top:10vh;
+        margin-top:10vh;
+        
     }
     &.big{
-        padding-top:0vh;
+        margin-top:0vh;
         transition-delay:1.2s;
     }
     @media(min-width:767px){

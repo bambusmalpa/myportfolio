@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome,faUserAlt, faTools, faLaptopCode, faMobileAlt} from '@fortawesome/free-solid-svg-icons'
-
 import styled from "styled-components";
 
 const MainNavList=styled.nav`
@@ -11,15 +10,15 @@ const MainNavList=styled.nav`
     top:100%;
     left:0;
     position:absolute;
-    flex-grow:1;
-    width:100vw;
+   
+    width:100%;
     height:10vh;
     display:flex;
     flex-direction:row;
     transition:0.5s;
     transition-delay:0.5s;
     background-color:#282A36;
-   
+    z-index:10;
     }
     .navList.off{
       transform:translateX(-100%)
@@ -34,6 +33,7 @@ const MainNavList=styled.nav`
 
 
     .navList__li>.navList__link{
+      position: relative;
       display:flex;
       width:100%;
       height:100%;
@@ -41,6 +41,9 @@ const MainNavList=styled.nav`
       justify-content:center;
       align-items:center;
       transition:1s;
+     >.navList__desc{
+       display:none;
+     }
     }
     .navList__li>.navList__link.active{
       color:#F8F8F2;
@@ -50,7 +53,7 @@ const MainNavList=styled.nav`
     @media(min-width:767px){
       .navList{
         width:5vw;
-        height:50vh;;
+        height:50vh;
         position:static;
         flex-direction:column;
        
@@ -62,8 +65,22 @@ const MainNavList=styled.nav`
       .navList__li{
         width:100%;
         height:10vh;
-    
-      }`
+
+        >.navList__link{
+          z-index:10;
+          width:100%;
+   
+        }
+        
+       
+  
+       
+
+        }}
+      }
+      
+      
+      `
 
 
 

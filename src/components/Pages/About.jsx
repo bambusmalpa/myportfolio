@@ -1,64 +1,33 @@
 import React from 'react';
 import styled from "styled-components"
 const AboutWraper=styled.section`
-padding-top:5vh;
+    padding-top:5vh;
     color:#F8F8F2;
-    height:90%;
     width:80%;
     display:flex;
     flex-direction:column;
     justify-content:space-around;
     margin-left:auto;
     margin-right:auto;
-
-    /* &::before{
-        color:#BD93F9;
-        content:"<body>";
-        font-size:12px;
-        opacity:0.5;
-        animation:fadeIn 0.5s;
-    }
-
-    &::after{
-        content:"</body>";
-        color:#BD93F9;
-        font-size:12px;
-        opacity:0.5;
-        animation:fadeIn 0.5s;
-    } */
     >.about__title{
-        position:relative;
+        height:10vh;
+        font-size:3rem;
         animation:fadeIn 0.5s;
-        /* &::before{
-        top:-50%;
-        left:0%;
-        position:absolute;
-        color:#BD93F9;
-        content:"<h1>";
-        font-size:12px;
-        opacity:0.5;
-        animation:fadeIn 0.5s;
-        font-weight:400; */
+        text-align:center;
+    }
+    >.about__paragraph{
+        font-size:1rem;
+        margin-bottom:1rem;
+        @media(min-width:767px){
+        font-size:2rem;}
     }
 
-    /* &::after{
-        top:100%;
-        left:0%;
-        position:absolute;
-        content:"</h1>";
-        color:#BD93F9;
-        font-size:12px;
-        opacity:0.5;
-        font-weight:400;
-        animation:fadeIn 0.5s;
-    } */
+   
     }
     >.about__paragraph:nth-child(odd){
-        
         animation:inLeft 0.5s ;
     }
     >.about__paragraph:nth-child(even){
-        
         animation:inRight 0.5s ;
     }
     

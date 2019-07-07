@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
-
+import logo from "./logopath.svg"
 const LogoSvg=styled.div`
 
   width:100%;
@@ -72,6 +72,7 @@ const LogoSvg=styled.div`
 const Logo = () => {
     return ( 
       <LogoSvg className="logo__container">
+      {/* <img src={logo} alt=""/> */}
       <svg className="home__logo"xmlns="http://www.w3.org/2000/svg"
    width="100%" height="100%"
    viewBox="0 0 1150 500">

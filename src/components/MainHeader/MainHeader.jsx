@@ -5,6 +5,7 @@ import MenuButton from './MenuButton';
 import Logo from "./logo/Logo"
 
 const HeaderContainer=styled.header`
+
     position:relative;
     width:100%;
     height:10vh;
@@ -18,11 +19,11 @@ const HeaderContainer=styled.header`
     
     @media(min-width:767px){
         flex-direction:column;
-        width:5vw;
+        width:10vw;
         height:95vh;
         justify-content:flex-start;
         align-items:center;
-    }
+    } 
         
 `
 const LogoContainer=styled.div`
@@ -30,8 +31,8 @@ const LogoContainer=styled.div`
          
      }
      @media(min-width:767px){
-        width:5vw;
-        height:5vw;
+        width:10vw;
+        height:10vw;
         background-color:#000000;
      }
 

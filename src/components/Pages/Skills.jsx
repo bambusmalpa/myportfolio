@@ -3,33 +3,10 @@ import SingleSkill from "./SingleSkill"
 import styled from 'styled-components' 
 
 const SkillsTitle=styled.h1`
-        position:relative;
-        display:block;
+    font-size:3rem;
+    height:10vh;
     color:#F8F8F2;
     text-align:center;
-    margin:5%;
-
-@media(min-width:767px){
-        /* &::before{
-       
-        color:#BD93F9;
-        content:"<h1>";
-        font-size:12px;
-        opacity:0.5;
-        animation:fadeIn 0.5s;
-        font-weight:400;
-    } */
-
-    /* &::after{
-        
-        content:"</h1>";
-        color:#BD93F9;
-        font-size:12px;
-        opacity:0.5;
-        font-weight:400;
-        animation:fadeIn 0.5s;
-    } */
-    }
 
     
 `
@@ -86,7 +63,7 @@ const skillArray=[{color:"#e34f26",className:"fab fa-html5", name:"index.html",d
 :"Moja sympatia do Reacta zaczęła się z pierwszym napisanym stanowym komponentem;D"},
 {color:"#F1502F",className:"fab fa-git-alt",name:".git",description
 :"Swobodnie używam systemów kontroli wersji:D"},
-{color:"#cc0000",className:"fa fa-gimp",name:"Photoshop.psd",description
+{color:"#cc0000",className:"fas fa-file-image",name:"Photoshop.psd",description
 :"Do obróbki grafik głównie używam Gimpa, pracowałem z grafiką wektorową."},
 ];
 
@@ -104,8 +81,9 @@ render(){
                
                 <SkillsTitle>UMIEJĘTNOŚCI I TECHNOLOGIE</SkillsTitle>
                 <ul>
-               {skills}
+                    {skills}
                </ul>
+               
         </SkilsWrapper>
        
     );}
