@@ -23,13 +23,14 @@ const WorksTitle=styled.h1`
 
 
 const WorksWrapper=styled.section`
-    min-width:80vw;
+    width:80vw;
     display:grid;
     grid-template-columns:80vw;
     grid-template-rows:80vw 80vw 80vw 80vw 80vw 80vw 80vw 80vw;
     margin-left:auto;
     margin-right:auto;
     grid-gap: 1em;
+    min-height:80vh;
     margin-bottom:10vh;
     @media(min-width:576px){
         grid-template-rows:40vw 40vw 40vw 40vw ;
