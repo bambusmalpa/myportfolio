@@ -42,6 +42,7 @@ const SkillsWrapper=styled.section`
         flex-direction:row;
         justify-content: space-around;
         align-items:space-around;
+        margin-bottom:0vh;
         }
     }
    

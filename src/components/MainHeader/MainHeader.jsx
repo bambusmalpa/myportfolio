@@ -20,7 +20,7 @@ const HeaderContainer=styled.header`
     @media(min-width:767px){
         flex-direction:column;
         width:10vw;
-        height:95vh;
+        height:100%;
         justify-content:flex-start;
         align-items:center;
     } 

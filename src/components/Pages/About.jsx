@@ -9,6 +9,7 @@ const AboutWraper=styled.section`
     justify-content:space-around;
     margin-left:auto;
     margin-right:auto;
+    margin-bottom:10vh;
     >.about__title{
         height:10vh;
         font-size:3rem;
@@ -19,7 +20,10 @@ const AboutWraper=styled.section`
         font-size:1rem;
         margin-bottom:1rem;
         @media(min-width:767px){
-        font-size:1.5rem;}
+        font-size:1.2rem;}
+        @media(min-width:992px){
+            font-size:1.5rem;
+        }
     }
 
    
@@ -45,7 +49,7 @@ const AboutWraper=styled.section`
     }
     @media(min-width:767px){
         width:60%;
-
+        margin-bottom:0vh;
     }
     
 
@@ -59,7 +63,7 @@ const About = () => {
     <p className="about__paragraph">Zafascynowało mnie że prosty tekst napisany w "Notatniku" można zmienić w żywy mechanizm i pokazać całemu światu.</p>
     <p className="about__paragraph">Uczę się przy pomocy kursów internetowych, czytam dokumentację, pozyskuje informacje na forach programistycznych.</p>
     <p className="about__paragraph">Jesienią 2018 roku uczestniczyłem w warsztatach "FrontDev" organizowanych przez firmę PGS.</p>
-    <p className="about__paragraph">Oprócz progranowania interesuję się militariami i airsoftem.</p>
+    <p className="about__paragraph">Oprócz programowaniem interesuję się militariami i airsoftem.</p>
     </AboutWraper>);
 }
  
