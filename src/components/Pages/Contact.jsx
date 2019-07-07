@@ -32,6 +32,7 @@ justify-content:space-around;
     width:80vw;
     height:80vw;
     animation: getIn 1s;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   }
 
 
@@ -143,9 +144,9 @@ class Form extends React.Component {
       <ContactTitle>KONTAKT</ContactTitle>
       <ContactSection>
       <PhoneEmailWrapper  className="contact__element">
-      <i class="icon fas fa-mobile-alt"></i><span className="contactData" id="phone">{this.generateNumber()}</span>
-          <i class="icon fas fa-envelope"></i><span className="contactData" id="email">{this.generateMail()}</span>
-          <i class="icon fab fa-github"></i><span className="contactData">
+      <i className="icon fas fa-mobile-alt"></i><span className="contactData" id="phone">{this.generateNumber()}</span>
+          <i className="icon fas fa-envelope"></i><span className="contactData" id="email">{this.generateMail()}</span>
+          <i className="icon fab fa-github"></i><span className="contactData">
           github.com/bambusmalpa
           </span>
       </PhoneEmailWrapper>
