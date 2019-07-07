@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components"
 
 const Foot=styled.footer`
-    width:100;
+    width:100vw;
     background-color:#282A36;
     color:#F8F8F2;
     height:5vh;
@@ -11,7 +11,10 @@ const Foot=styled.footer`
     align-items:center;
     border-top:1px solid #BD93F9;
     box-sizing:border-box;
-    
+    position:fixed;
+    bottom:0;
+    left:0;
+
 `
 
 const MainFooter = () => {

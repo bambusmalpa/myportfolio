@@ -10,9 +10,11 @@ import styled from "styled-components"
 const ContentContainer=styled.main`
     flex: 1;
     background-color:#44475A;
+    
     transition:0.5s;
     overflow-x: hidden;
     min-height:85vh;
+    
     &.small{
         margin-top:10vh;
         

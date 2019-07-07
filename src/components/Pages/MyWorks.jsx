@@ -30,6 +30,7 @@ const WorksWrapper=styled.section`
     margin-left:auto;
     margin-right:auto;
     grid-gap: 1em;
+    margin-bottom:10vh;
     @media(min-width:576px){
         grid-template-rows:40vw 40vw 40vw 40vw ;
         grid-template-columns:40vw 40vw ;}

@@ -26,7 +26,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:space-around;
-
+margin-bottom:10vh;
   >.contact__element{
     border:2px solid #282A36;;
     width:80vw;

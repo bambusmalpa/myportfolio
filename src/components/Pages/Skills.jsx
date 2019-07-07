@@ -27,6 +27,7 @@ const SkillsWrapper=styled.section`
         display:flex;
         flex-direction:column;
         justify-self:center;
+        margin-bottom:5vh;
     }
     @media(min-width:767px){
         

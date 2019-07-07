@@ -7,7 +7,7 @@ const HomeWrapper= styled.section`
         display:flex;
         flex-direction:column;
         align-items:center;
-        height:80vh;
+        height:75vh;
     >.home__title{
         color:#F8F8F2;
         width:100%;
