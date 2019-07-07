@@ -89,7 +89,7 @@ const About = () => {
     <p className="about__paragraph">Zainteresowałem się front-endem pod koniec 2017 roku, przypadkiem trafiłem na film na YouTube pokazujący podstawy HTMLa.</p>
     <p className="about__paragraph">Zafascynowało mnie że prosty tekst napisany w "Notatniku" można zmienić w żywy mechanizm i pokazać całemu światu.</p>
     <p className="about__paragraph">Uczę się przy pomocy kursów internetowych, czytam dokumentację, pozyskuje informacje na forach programistycznych.</p>
-    <p className="about__paragraph">Jesienią 2018 roku uczestniczyłem w warsztatach "Software Talks" organizowanych przez firmę PGS.</p>
+    <p className="about__paragraph">Jesienią 2018 roku uczestniczyłem w warsztatach "FrontDev" organizowanych przez firmę PGS.</p>
     <p className="about__paragraph">Oprócz progranowania interesuję się militariami i airsoftem.</p>
     </AboutWraper>);
 }
