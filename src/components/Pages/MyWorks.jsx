@@ -26,7 +26,7 @@ const WorksWrapper=styled.section`
     width:80vw;
     display:grid;
     grid-template-columns:80vw;
-    grid-template-rows:80vw 80vw 80vw 80vw 80vw 80vw 80vw 80vw;
+    grid-template-rows:80vw 80vw 80vw 80vw 80vw 80vw 80vw 80vw 80vw;
     margin-left:auto;
     margin-right:auto;
     grid-gap: 1em;
