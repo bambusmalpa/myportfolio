@@ -5,11 +5,11 @@ const Wrapp=styled.div`
     display:flex;
     flex-direction:column;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-
+    
 @media(min-width:767px){
        width:200px;
        justify-content:space-around;
-       
+       border:2px solid #282A36;
 `
 
 const SkillTag =styled.li`

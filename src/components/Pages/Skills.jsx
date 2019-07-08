@@ -43,6 +43,22 @@ const SkillsWrapper=styled.section`
         justify-content: space-around;
         align-items:space-around;
         margin-bottom:0vh;
+
+
+        @media(min-width:576px){
+        display:grid;
+        grid-template-rows:40vw 40vw 40vw 40vw;
+        grid-template-columns:40vw 40vw ;
+        grid-gap: 1em}
+        @media(min-width:768px){
+        grid-template-rows:25vw 25vw 25vw 25vw;
+        grid-template-columns:25vw 25vw 25vw;
+        }
+        @media(min-width:1200px){
+        grid-template-rows:40vh 40vh 40vh;
+        grid-template-columns:15vw 15vw 15vw 15vw 15vw;
+        margin-bottom:0vh;
+    }
         }
     }
    
