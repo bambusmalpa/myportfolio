@@ -68,6 +68,8 @@ const skillArray=[{color:"#e34f26",className:"fab fa-html5", name:"index.html",d
 :"Swobodnie używam systemów kontroli wersji:D"},
 {color:"#cc0000",className:"fas fa-file-image",name:"Photoshop.psd",description
 :"Do obróbki grafik głównie używam Gimpa, pracowałem z grafiką wektorową."},
+{color:"#FFB200",className:"fas fa-database",name:"database.sql",description
+:"Rozumiem strukturę relacyjnych baz danych, potrafię pisać rozbudowane kwerendy."}
 ];
 
 const skills=skillArray.map((el)=>{
